@@ -1,13 +1,13 @@
 module.exports = {
-  User: {
-    String: ["name", "email", "password", "avatar"],
-    required: ["name", "email", "password"],
-    minLength: ["password"],
-  },
+    User: {
+      "type:String": ["name", "email", "password", "avatar"],
+      "required:true": ["name", "email", "password"],
+      "minLength:6": ["password"],
+    },
 
-  Profile: {
-      String: ["bio", "status", "location"],
-      MongooseId: ["user"],
-      refs: ["user"]
-  },
+    Profile: {
+      "type:String": ["bio", "status", "location"],
+      "type:MongooseId": ["user"],
+      "ref:'users'": ["user"],
+    },
 };
