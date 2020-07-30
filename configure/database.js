@@ -1,5 +1,5 @@
 module.exports = {
-  uri:
+  dbUri:
     "-----------------",
   success: "Connected to database.",
   danger: "Database Connection Error.",

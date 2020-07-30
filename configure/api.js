@@ -1,5 +1,4 @@
 module.exports = {
-  api: {
     users: {
       // require: ["Models/User", "Middleware/auth", "_O/Validator"],
       get: `async (req, res) => {
@@ -38,7 +37,6 @@ module.exports = {
         }
       }`,
     },
-  },
 };
 
 
