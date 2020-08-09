@@ -1,11 +1,12 @@
 const _O = require("../_O");
-const api = require("./configure/api");
-const server = require("./configure/server");
-const database = require("./configure/database");
-const models = require("./configure/models")
+const api = require("./configureBackend/api");
+const models = require("./configureBackend/models")
+const secrets = require("./configureBackend/secrets")
+const middleware = require("./configureBackend/middleware")
+
 _O({
   api,
-  database,
-  server,
-  models
+  models,
+  secrets,
+  middleware
 });
