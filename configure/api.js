@@ -1,6 +1,6 @@
 module.exports = {
     users: {
-      // require: ["Models/User", "Middleware/auth", "_O/Validator"],
+      require: ["Models/User", "Middleware/auth", "_O/Validator"],
       get: `async (req, res) => {
         try {
             const getAllUsers = await User.find();
@@ -19,7 +19,7 @@ module.exports = {
       }`,
     },
     profiles: {
-      // require: ["Models/Profile", "Middleware/auth", "_O/Validator"],
+      require: ["Models/Profile", "Middleware/auth", "_O/Validator"],
       get: `async (req, res) => {
         try {
             const getAllUsers = await Profile.find();

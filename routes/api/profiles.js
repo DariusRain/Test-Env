@@ -2,6 +2,8 @@
 const {Router} = require("express");
 const router = Router();
 
+const Profile = require("../../models/Profile")
+
 
 router.get("/", async (req, res) => {
         try {
@@ -11,6 +13,8 @@ router.get("/", async (req, res) => {
             res.status(500).json({msg: "Server Error."})
         }
       })
+const auth = require("../middleware/auth")
+
 
 router.post("/", async (req, res) => {
         try {
